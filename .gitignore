@@ -1,0 +1,39 @@
+/: Playground - Reto de la semana 2
+
+import UIKit
+
+var numero = 1...100
+
+for i in numero{
+//Valido todasl la opciones para los numero pares
+    if i % 2 == 0{
+        if i % 5 == 0{
+            if i >= 30 && i <= 40{
+                print("\(i) es un numero par, Vivia Swift, Bingo")
+            }else{
+                print("\(i) es un numero par, Bingo")
+            }
+        }else if i % 2 == 0 && i >= 30 && i <= 40{
+            print("\(i) es un numero par, Vivia Swift")
+        }
+        else{
+            print("\(i) es un numero par")
+        }
+    }
+    
+
+//Valido todas las opciones para los numeros impares
+    if i % 2 != 0{
+        if i % 5 == 0{
+            if i >= 30 && i <= 40{
+                print("\(i) es un numero impar, Vivia Swift, Bingo")
+            }else{
+                print("\(i) es un numero impar, Bingo")
+            }
+        }else if i % 2 != 0 && i >= 30 && i <= 40{
+            print("\(i) es un numero impar, Vivia Swift")
+        }else{
+            print("\(i) es un numero impar")
+        }
+    }
+}
